@@ -14,8 +14,8 @@ function App({ Component, pageProps }: AppProps) {
     <Fragment>
       <Head>
         <meta charSet="utf-8" />
-        <title>درخت هوش مصنوعی</title>
-        <meta name="description" content="درخت هوش مصنوعی" />
+        <title>کلمه به بردار</title>
+        <meta name="description" content="کلمه به بردار" />
         <meta name="author" content="موزه علوم کامپیوتر ایران" />
       </Head>
       <ThemeProvider theme={ThemeRTL}>
