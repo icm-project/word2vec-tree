@@ -1,11 +1,11 @@
 import Step from "components/molecules/Step";
 import React, { Fragment, useEffect, useState } from "react";
 import steps from 'components/organisms/StepsData';
-import { Button, IconButton } from "@mui/material";
-import HomeIcon from '@mui/icons-material/Home';
+import { IconButton } from "@mui/material";
 
 import NextButton from 'assets/next-button.svg';
 import PreviousButton from 'assets/previous-button.svg';
+import ICMLogo from 'assets/icm-logo.svg';
 import Image from "next/image";
 
 function Home() {
@@ -36,6 +36,7 @@ function Home() {
         sx={{ position: 'fixed', bottom: 200, right: 0, width: 100 }}>
         <Image src={NextButton} width={0} alt="" style={{ width: '100%' }} />
       </IconButton>
+      <Image src={ICMLogo} alt="" width={0} style={{ position: 'fixed', bottom: 10, right: 10, width: 30 }} />
     </Fragment >
   )
 }
