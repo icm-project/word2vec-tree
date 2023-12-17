@@ -42,7 +42,7 @@ const Step2 = new Step({
       <Typography marginTop={8} marginBottom={8}>
         دگرنماییِ واژگان یعنی نمایش واژگان به شکل نقاطی در فضای چندبُعدی به منظور تجزیه و تحلیل متن. این تکنیک معمولا با استفاده از الگوریتم‌های یادگیری ماشین و داده‌های با حجم عظیم اجرا می‌شود، به نحوی که نقاطی که به هم نزدیک‌تر هستند از نظر معنی نیز مشابه باشند. برای دستیابی به این هدف، تمام واژگانِ یک زبان در فضایی چندصد-بُعدی قرار می‌گیرند که برای انسان قابل‌تصور نیست. اما با استفاده از الگوریتم‌های ریاضیاتی می‌توان این نقاط را در فضای دو یا سه‌بُعدی نیز قرار داد، که البته به مدل‌سازی ضعیف‌تر می‌انجامد.
       </Typography>
-      <Gamefram src={'https://word2vec.darkube.app/?show_colors=true'} />
+      <Gamefram src={'https://word2vec.darkube.app/'} />
     </Stack>,
   nextStep: 'Step3',
 })
@@ -64,7 +64,7 @@ const Step3 = new Step({
       <Typography marginTop={8} marginBottom={8}>
         الگوریتم‌های دگرنمایی واژگان به شکلی تعبیه می‌شوند که واژگانِ با معنای مشابه به طور خودکار در کنار یکدیگر قرار گیرند. برای مثال همان طور که در نمودار مقابل مشاهده می‌کنید نام‌های روزهای هفته، نام‌های شهرها و نام‌های کشورها و حتی اسامی مردانه و زنانه هر کدام شبیه یک خوشه در کنار یکدیگر قرار گرفته اند.
       </Typography>
-      <Gamefram src={'https://word2vec.darkube.app/?show_colors=true&show_relations=true'} />
+      <Gamefram src={'https://word2vec.darkube.app/?show_colors=true/'} />
     </Stack>,
   nextStep: 'Step4',
 })
@@ -86,7 +86,28 @@ const Step4 = new Step({
       <Typography marginTop={8} marginBottom={8}>
         یکی دیگر از ویژگی‌هایی که در دگرنمایی واژگان حفظ می‌شود، روابط معنایی بین زوج کلمات است. در واقع انتظار داریم همان بُرداری که فرانسه را به پایتخت آن یعنی پاریس متصل می‌کند، آلمان را نیز به پایتخت‌اش یعنی برلین متصل کند.
       </Typography>
-      <Gamefram src={'https://word2vec.darkube.app/?add_words=true&show_colors=true'} />
+      <Gamefram src={'https://word2vec.darkube.app/?show_colors=true&show_relations=true/'} />
+    </Stack>,
+  nextStep: 'Step5',
+})
+
+const Step5 = new Step({
+  id: "Step5",
+  parent: Step4,
+  x: 1200,
+  y: 0,
+  scale: 1,
+  children:
+    <Stack alignItems={'center'} width={'100%'} height={'100%'}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom>
+        کلمات جدید
+      </Typography>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom>
+        New Words
+      </Typography>
+      <Typography marginTop={8} marginBottom={8}>
+        در بخش‌های پیشین، با دگرنمایی واژگان و ویژگی‌های جالب آن آشنا شدید. در این بخش می‌توانید کلمات دلخواه خود را وارد کرده و نقطه‌ی مربوط به آنها را بر روی نمودار مشاهده کنید.      </Typography>
+      <Gamefram src={'https://word2vec.darkube.app/?add_words=true&show_colors=true/'} />
     </Stack>,
   nextStep: 'Step1',
 })
@@ -96,4 +117,5 @@ export default [
   Step2,
   Step3,
   Step4,
+  Step5,
 ];
