@@ -27,7 +27,7 @@ function Home() {
           return <Step key={stepData.id} {...stepData} />
         })}
       </div>
-      <script type="text/javascript" src="/js/impress.js" />
+      <script type="text/javascript" src="/word2vec-tree/js/impress.js" />
       <IconButton disableRipple onClick={() => impress.prev()}
         sx={{ position: 'fixed', bottom: 200, left: 0, width: 100 }}>
         <Image src={PreviousButton} width={0} alt="" style={{ width: '100%' }} />
