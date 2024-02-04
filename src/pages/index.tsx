@@ -8,6 +8,8 @@ import PreviousButton from 'assets/previous-button.svg';
 import ICMLogo from 'assets/icm-logo.svg';
 import Image from "next/image";
 
+const basePath = process.env.NODE_ENV === 'development' ? '' : '/word2vec-tree';
+
 function Home() {
   const [impress, setImpress] = useState<any>();
 
@@ -27,7 +29,7 @@ function Home() {
           return <Step key={stepData.id} {...stepData} />
         })}
       </div>
-      <script type="text/javascript" src="/js/impress.js" />
+      <script type="text/javascript" src={`${basePath}/js/impress.js`} />
       <IconButton disableRipple onClick={() => impress.prev()}
         sx={{ position: 'fixed', bottom: 200, left: 0, width: 100 }}>
         <Image src={PreviousButton} width={0} alt="" style={{ width: '100%' }} />
