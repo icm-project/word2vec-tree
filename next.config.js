@@ -27,7 +27,9 @@ const nextProductionConfig = {
   },
 };
 
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ **/
 const nextDevelopmentConfig = {
   reactStrictMode: true,
 }
