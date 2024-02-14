@@ -14,13 +14,13 @@ const Step1 = new Step({
       <Typography variant="h5" alignSelf={'end'} gutterBottom>
         اینترنت، منبع عظیم داده‌های متنی
       </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={8}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
         Internet: A Huge Source of Textual Data
       </Typography>
       <Typography>
         حجم عظیم داده‌های متنی در اینترنت از منابع مختلفی مانند کتاب‌های الکترونیکی، ویکی‌پدیا، شبکه‌های اجتماعی، سایت‌ها و غیره به دست می‌آید. این داده‌ها شامل متون، مقالات، نظرات کاربران، خبرها، محتواهای ویدئویی و بسیاری اطلاعات دیگر است. حجم عظیم این داده‌ها امکانات بسیاری را برای ساخت مدل‌های زبانی مبتنی بر یادگیری ماشین فراهم می‌کند.
       </Typography>
-      <Image src={Step1Imgage} width={0} height={0} style={{ width: '100%', marginTop: 60 }} alt="" />
+      <Image src={Step1Imgage} width={0} height={0} style={{ width: '100%', marginTop: 100 }} alt="" />
     </Stack>,
   nextStep: 'Step2',
 })
@@ -36,7 +36,7 @@ const Step2 = new Step({
       <Typography variant="h5" alignSelf={'end'} gutterBottom>
         دگرنمایی واژگان
       </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={8}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
         Word Embedding
       </Typography>
       <Typography>
@@ -58,7 +58,7 @@ const Step3 = new Step({
       <Typography variant="h5" alignSelf={'end'} gutterBottom>
         قرابت معنایی
       </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={8}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
         Cluster Property
       </Typography>
       <Typography>
@@ -80,7 +80,7 @@ const Step4 = new Step({
       <Typography variant="h5" alignSelf={'end'} gutterBottom>
         روابط میان جفت کلمات
       </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={8}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
         Vector Property
       </Typography>
       <Typography>
@@ -102,7 +102,7 @@ const Step5 = new Step({
       <Typography variant="h5" alignSelf={'end'} gutterBottom>
         کلمه خودتان را به نمودار کلمات اضافه کنید
       </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={8}>
+      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
         Add your own word to the word chart
       </Typography>
       <Typography>

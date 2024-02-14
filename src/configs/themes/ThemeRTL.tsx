@@ -5,7 +5,7 @@ const ThemeRTL = createTheme({
   typography: {
     allVariants: {
       fontFamily: "'Anjoman', 'IRANYekan', 'Lalezar'",
-      fontWeight: 800,
+      fontWeight: 600,
       color: '#0F3C6C',
       direction: 'rtl',
       textAlign: 'justify',
@@ -17,8 +17,8 @@ const ThemeRTL = createTheme({
       fontSize: 100,
     },
     h5: {
+      fontWeight: 1000,
       fontSize: 24,
-      fontFamily: "'Montserrat', 'Anjoman', 'IRANYekan', 'Lalezar'",
     },
     button: {
       fontFamily: "'Anjoman', 'IRANYekan', 'Lalezar'",
