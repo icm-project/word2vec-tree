@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { IconButton } from "@mui/material";
 
 import NextButton from 'assets/next-button.svg';
@@ -13,6 +13,10 @@ const basePath = process.env.NODE_ENV === 'development' ? '' : '/word2vec-tree';
 function Home() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const StepsDataSize = StepsData.length;
+
+  useEffect(() => {
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  }, [])
 
   return (
     <Fragment>
