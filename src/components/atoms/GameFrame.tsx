@@ -12,7 +12,7 @@ const GameFrame: FC<GameFramePropsType> = ({ src }) => {
   const scaleRate = maxWidth / width;
 
   return (
-    <iframe allow="camera;microphone" src={src} width={width} height={height} style={{ position: 'absolute', top: 0, left:0, border: 0, borderRadius: 5, transform: `translate(${-maxWidth / 1.65}px, -15%) scale(${scaleRate})` }} />
+    <iframe allow="camera;microphone" src={src} width={width} height={height} style={{ position: 'absolute', border: 0, borderRadius: 5, transform: `translate(${-scaleRate*77}%, ${-scaleRate*125}%) scale(${scaleRate})` }} />
   )
 
 };
