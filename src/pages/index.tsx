@@ -1,13 +1,11 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Container, IconButton } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 
 import NextButton from 'assets/next-button.svg';
 import PreviousButton from 'assets/previous-button.svg';
 import ICMLogo from 'assets/icm-logo.svg';
 import Image from "next/image";
 import StepsData from "components/organisms/StepsData";
-
-const basePath = process.env.NODE_ENV === 'development' ? '' : '/word2vec-tree';
 
 function Home() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -19,25 +17,24 @@ function Home() {
 
   return (
     <Fragment>
-      <Container maxWidth='xl'
+      <Box
         sx={{
+          paddingX: 8,
           height: '100vh',
           display: 'flex',
           justifyContent: 'center',
-          marginRight: 'auto !important',
-          marginLeft: 'auto !important',
         }}>
         {StepsData[currentStepIndex].children}
-      </Container>
+      </Box>
       <IconButton disableRipple onClick={() => setCurrentStepIndex(currentStepIndex => (currentStepIndex - 1 + StepsDataSize) % StepsDataSize)}
-        sx={{ position: 'fixed', bottom: 10, left: 0, width: 100 }}>
-        <Image src={PreviousButton} width={0} alt="" style={{ width: '100%' }} />
+        sx={{ position: 'fixed', bottom: 0, left: 0 }}>
+        <Image src={PreviousButton} width={0} alt="" style={{ width: 140, height: 100 }} />
       </IconButton>
       <IconButton disableRipple onClick={() => setCurrentStepIndex(currentStepIndex => (currentStepIndex + 1) % StepsDataSize)}
-        sx={{ position: 'fixed', bottom: 10, right: 0, width: 100 }}>
-        <Image src={NextButton} width={0} alt="" style={{ width: '100%' }} />
+        sx={{ position: 'fixed', bottom: 0, right: 0 }}>
+        <Image src={NextButton} width={0} alt="" style={{ width: 140, height: 100 }} />
       </IconButton>
-      <Image src={ICMLogo} alt="" width={0} style={{ position: 'fixed', top: 10, left: 10, width: 30 }} />
+      <Image src={ICMLogo} alt="" width={0} style={{ position: 'fixed', top: 10, left: 10, width: 50, height: 50 }} />
     </Fragment >
   )
 }

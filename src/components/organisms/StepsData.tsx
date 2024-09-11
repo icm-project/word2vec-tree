@@ -38,7 +38,7 @@ const Step2 = new Step({
   y: 0,
   scale: 1,
   children:
-    <Grid spacing={2} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
+    <Grid spacing={4} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
       <Grid item xs={3}>
         <Typography variant="h5" alignSelf={'end'} gutterBottom>
           دگرنمایی واژگان
@@ -64,7 +64,7 @@ const Step3 = new Step({
   y: 0,
   scale: 1,
   children:
-    <Grid spacing={2} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
+    <Grid spacing={4} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
       <Grid item xs={3}>
         <Typography variant="h5" alignSelf={'end'} gutterBottom>
           قرابت معنایی
@@ -90,7 +90,7 @@ const Step4 = new Step({
   y: 0,
   scale: 1,
   children:
-    <Grid spacing={2} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
+    <Grid spacing={4} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
       <Grid item xs={3}>
         <Typography variant="h5" alignSelf={'end'} gutterBottom>
           روابط میان جفت کلمات
@@ -116,18 +116,22 @@ const Step5 = new Step({
   y: 0,
   scale: 1,
   children:
-    <Stack direction={'row'} position={'static'} alignItems={'center'} width={'100%'} height={'100%'}>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom>
-        کلمه خودتان را به نمودار کلمات اضافه کنید
-      </Typography>
-      <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
-        Add your own word to the word chart
-      </Typography>
-      <Typography>
-        در بخش‌های پیشین، با دگرنمایی واژگان و ویژگی‌های جالب آن آشنا شدید. در این بخش می‌توانید کلمات دلخواه خود را وارد کرده و نقطه‌ی مربوط به آنها را بر روی نمودار مشاهده کنید.
-      </Typography>
-      <GameFrame src={'https://word2vec.darkube.app/?add_words=true&show_colors=true/'} />
-    </Stack>,
+    <Grid spacing={4} container alignItems={'center'} justifyContent={'space-between'} flexDirection={'row-reverse'}>
+      <Grid item xs={3}>
+        <Typography variant="h5" alignSelf={'end'} gutterBottom>
+          کلمه خودتان را به نمودار کلمات اضافه کنید
+        </Typography>
+        <Typography variant="h5" alignSelf={'end'} gutterBottom marginBottom={6}>
+          Add your own word to the word chart
+        </Typography>
+        <Typography>
+          در بخش‌های پیشین، با دگرنمایی واژگان و ویژگی‌های جالب آن آشنا شدید. در این بخش می‌توانید کلمات دلخواه خود را وارد کرده و نقطه‌ی مربوط به آنها را بر روی نمودار مشاهده کنید.
+        </Typography>
+      </Grid>
+      <Grid item xs={9}>
+        <GameFrame src={'https://word2vec.darkube.app/?add_words=true&show_colors=true/'} />
+      </Grid>
+    </Grid>,
   nextStep: 'Step1',
 })
 
