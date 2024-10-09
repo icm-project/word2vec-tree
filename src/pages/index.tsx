@@ -27,12 +27,12 @@ function Home() {
         {StepsData[currentStepIndex].children}
       </Box>
       <IconButton disableRipple onClick={() => setCurrentStepIndex(currentStepIndex => (currentStepIndex - 1 + StepsDataSize) % StepsDataSize)}
-        sx={{ position: 'fixed', bottom: 0, left: 0 }}>
-        <Image src={PreviousButton} width={0} alt="" style={{ width: 140, height: 100 }} />
+        sx={{ position: 'fixed', bottom: 0, left: 30 }}>
+        <Image src={PreviousButton} width={0} alt="" style={{ width: 170, height: 100 }} />
       </IconButton>
       <IconButton disableRipple onClick={() => setCurrentStepIndex(currentStepIndex => (currentStepIndex + 1) % StepsDataSize)}
-        sx={{ position: 'fixed', bottom: 0, right: 0 }}>
-        <Image src={NextButton} width={0} alt="" style={{ width: 140, height: 100 }} />
+        sx={{ position: 'fixed', bottom: 0, right: 30 }}>
+        <Image src={NextButton} width={0} alt="" style={{ width: 170, height: 100 }} />
       </IconButton>
       <Image src={ICMLogo} alt="" width={0} style={{ position: 'fixed', top: 10, left: 10, width: 50, height: 50 }} />
     </Fragment >
