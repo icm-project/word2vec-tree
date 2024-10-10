@@ -4,6 +4,8 @@ import Step1Image from 'assets/step1-image.svg';
 import Image from "next/image";
 import GameFrame from "components/atoms/GameFrame";
 
+const backendDomain = process.env.NEXT_PUBLIC_BACKEND_DOMAIN || 'http://103.75.198.244/';
+
 const Step1 = new Step({
   id: "Step1",
   x: 0,
@@ -51,7 +53,7 @@ const Step2 = new Step({
         </Typography>
       </Grid>
       <Grid item xs={9}>
-        <GameFrame src={'https://word2vec.darkube.app/'} />
+        <GameFrame src={`${backendDomain}`} />
       </Grid>
     </Grid>,
   nextStep: 'Step3',
@@ -77,7 +79,7 @@ const Step3 = new Step({
         </Typography>
       </Grid>
       <Grid item xs={9}>
-        <GameFrame src={'https://word2vec.darkube.app/?show_colors=true/'} />
+        <GameFrame src={`${backendDomain}?show_colors=true/`} />
       </Grid>
     </Grid>,
   nextStep: 'Step4',
@@ -103,7 +105,7 @@ const Step4 = new Step({
         </Typography>
       </Grid>
       <Grid item xs={9}>
-        <GameFrame src={'https://word2vec.darkube.app/?show_colors=true&show_relations=true/'} />
+        <GameFrame src={`${backendDomain}?show_colors=true&show_relations=true/`} />
       </Grid>
     </Grid>,
   nextStep: 'Step5',
@@ -129,7 +131,7 @@ const Step5 = new Step({
         </Typography>
       </Grid>
       <Grid item xs={9}>
-        <GameFrame src={'https://word2vec.darkube.app/?add_words=true&show_colors=true/'} />
+        <GameFrame src={`${backendDomain}?add_words=true&show_colors=true/`} />
       </Grid>
     </Grid>,
   nextStep: 'Step1',

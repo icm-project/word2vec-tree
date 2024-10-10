@@ -5,3 +5,4 @@ yarn-error.log*
 postcss.config.js
 
 .next/
+.env
