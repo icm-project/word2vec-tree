@@ -4,7 +4,7 @@ import Step1Image from 'assets/step1-image.svg';
 import Image from "next/image";
 import GameFrame from "components/atoms/GameFrame";
 
-const backendDomain = process.env.NEXT_PUBLIC_BACKEND_DOMAIN || 'http://103.75.198.244/';
+const backendDomain = process.env.NEXT_PUBLIC_BACKEND_DOMAIN || 'http://103.75.198.244:20001/';
 
 const Step1 = new Step({
   id: "Step1",
